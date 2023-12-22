@@ -1,0 +1,50 @@
+﻿<Page x:Class="CEApp.Pages.CompaniesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CEApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CompaniesPage"
+      ShowsNavigationUI="False">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Left">
+            <Button x:Name="GetAllCompaniesButton"
+                    Width="300"
+                    Content="Get All Companies" 
+                    Click="GetAllCompaniesButton_Click"/>
+            <Button x:Name="GetCompaniesColection"
+                    Width="300"
+                    Content="Get Companies Collection"
+                    Click="GetCompaniesColection_Click"/>
+            <TextBlock x:Name="InfoTextBox"
+                       Width="300"
+                       Visibility="Hidden"/>
+            <Label Content="Companies Ids"/>
+            <ListBox x:Name="CompanyIdsListBox"
+                     Height="100"/>
+            <Button x:Name="DeleteCompanyButton"
+                    Content="Delete Company" 
+                    Click="DeleteCompanyButton_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right"
+                    Width="300">
+            <Label Content="Company Name"/>
+            <TextBox x:Name="CompanyNameTextBox"/>
+            <Label Content="Company Address"/>
+            <TextBox x:Name="CompanyAddressTextBox"/>
+            <Label Content="Company Country"/>
+            <TextBox x:Name="CompanyCountryTextBox"/>
+            <Label Content="Employee Name"/>
+            <TextBox x:Name="EmployeeNameTextBox"/>
+            <Label Content="Employee Age"/>
+            <TextBox x:Name="EmployeeAgeTextBox"/>
+            <Label Content="Employee Position"/>
+            <TextBox x:Name="EmployeePositionTextBox"/>
+            <Button x:Name="CreateCompanyButton"
+                    Content="Create Company" Click="CreateCompanyButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
